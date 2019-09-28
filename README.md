@@ -25,3 +25,6 @@ http://www.ti.com/lit/ds/symlink/tps63020.pdf
 https://www.digikey.com/product-detail/en/texas-instruments/TPS613222ADBVR/296-50503-1-ND/9685642
 
 http://www.ti.com/lit/ds/symlink/tps61322.pdf
+
+MCP1700T-2702E/TTCT-ND‎
+https://www.digikey.com/product-detail/en/MCP1700T-2702E%2fTT/MCP1700T-2702E%2fTTCT-ND/9642903/?itemSeq=304963549
