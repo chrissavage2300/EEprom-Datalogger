@@ -28,3 +28,7 @@ http://www.ti.com/lit/ds/symlink/tps61322.pdf
 
 MCP1700T-2702E/TTCT-ND‎
 https://www.digikey.com/product-detail/en/MCP1700T-2702E%2fTT/MCP1700T-2702E%2fTTCT-ND/9642903/?itemSeq=304963549
+
+LM66100DCKT
+
+http://www.ti.com/lit/ds/symlink/lm66100.pdf
