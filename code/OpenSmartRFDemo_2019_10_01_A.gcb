@@ -1,0 +1,52 @@
+'''A demonstration program for GCGB and GCB.
+'''--------------------------------------------------------------------------------------------------------------------------------
+'''This program
+'''RF modules seem to need up to 10 bytes to send correctly. Otherwise
+''' they work fine. Range is about 30ft.2400 max bps
+'''@author
+'''@licence GPL
+'''@version
+'''@date    01.11.2015
+'''********************************************************************************
+
+; ----- Configuration
+
+ #chip 18F25K20, 8
+ #config '[todo]
+
+' #include '[todo]
+
+#define USART_BAUD_RATE 2400
+#define USART_BLOCKING
+; ----- Constants
+
+
+; ----- Variables
+Dim CounterVar as Byte
+; ----- Quick Command Reference:
+  '[todo]
+
+
+; ----- Main body of program commences here.
+Do
+  HSerPrint 0xFF
+  HSerPrint 0xAA
+  'For CounterVar = 0 to 2
+    'HSerPrint 0xAA
+  'Next
+        HSerPrint "H"
+        HSerPrint "2"
+        HSerPrint "3"
+        HSerSend 13
+        HSerSend 10
+ ' For CounterVar = 0 to 255
+ '   HSerPrint CounterVar
+ '   wait 100 ms
+ ' Next
+
+
+wait 1000 ms
+Loop
+end
+
+; ----- Support methods.  Subroutines and Functions

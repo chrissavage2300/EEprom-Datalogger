@@ -1,0 +1,58 @@
+'''A demonstration program for GCGB and GCB.
+'''--------------------------------------------------------------------------------------------------------------------------------
+'''This program
+'''RF modules seem to need up to 10 bytes to send correctly. Otherwise
+''' they work fine. Range is about 30ft.2400 max bps
+'''@author
+'''@licence GPL
+'''@version
+'''@date    01.11.2015
+'''********************************************************************************
+
+; ----- Configuration
+
+ #chip 18F13K22, 8
+ #config '[todo]
+
+' #include '[todo]
+
+#define USART_BAUD_RATE 2400
+#define USART_BLOCKING
+; ----- Constants
+
+
+; ----- Variables
+Dim CounterVar as Byte
+Dim Rec as Byte
+Dim FirstByte as Byte
+Dim SecondByte as Byte
+Dim ThirdByte as Byte
+; ----- Quick Command Reference:
+  '[todo]
+
+
+; ----- Main body of program commences here.
+Do
+  HSerReceive (Rec)
+
+  If Rec = "H" then
+    'HSerReceive (Rec)
+    HSerPrint "Data OK"
+    HSerSend 13
+    HSerSend 10
+
+    HSerReceive (FirstByte)
+    HSerReceive (SecondByte)
+
+    HSerPrint FirstByte
+    HSerSend 13
+    HSerSend 10
+    HSerPrint SecondByte
+  End If
+
+
+
+Loop
+end
+
+; ----- Support methods.  Subroutines and Functions
