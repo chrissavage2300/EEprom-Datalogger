@@ -8,7 +8,7 @@ Features:
 * 32kHz Clock run from Timer 1 for accurate timing
 * Why Supercapacitor? Temperature range pretty much. Lithium's only go down to 0C and often times temperatures dip below that. Supercapacitors have a range of -40C to 60C which covers the range of outdoor temperatures. 
 
-* Apparently Li-SoCl2 batteries are a thing and have a huge temperature range. It only needs to provide roughly 50uA at all times. It roughly equates to a 1mAh battery, but I am being generous here. These are not rechargable. LiFePO4's would be good but I need to find them in a small size. 
+~~* Apparently Li-SoCl2 batteries are a thing and have a huge temperature range. It only needs to provide roughly 50uA at all times. It roughly equates to a 1mAh battery, but I am being generous here. These are not rechargable. LiFePO4's would be good but I need to find them in a small size. ~~
 
 Thoughts: Possibly adding a transmitter, or atleast the footprint for one for future use. The benefit of having a transmitter would be being able to see the temperature in real time. Then it just becomes a datalogger, which is what this project was spawned from. 
 
